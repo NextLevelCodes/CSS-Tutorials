@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders and Background in CSS</title>
+    <style>
+        .height-width{
+            height: 200px;
+            width: 200px;
+            background-color: royalblue;
+            
+        }
+        .borders{
+            height: 50px;
+            width: 150px;
+            background-color: aqua;
+            /* border-width: 4px;
+            border-style: dashed;
+            border-color: red; */
+            border: 4px solid red;
+            border-radius: 4px;
+            /* border-top-left-radius: 6px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 4px; */
+            /* border-left: 2px solid red;
+            border-top: 5px solid royalblue;
+            border-right: 2px solid green;
+            border-bottom: 2px solid black; */
+        }
+        .bgDemo{
+            height: 500px;
+            width: 1000px;
+            border: 2px solid red;
+            /* background-color: royalblue; */
+            background-image: url(./satis.png);
+            /* background-image: url("https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="); */
+           
+            background-repeat: no-repeat;
+            /* background-position: top right;
+            background-position: bottom right;
+            background-position: bottom left;
+            background-position: top center; */
+            /* top,bottom,center 
+            left,right,center  */
+            /* background-position: top left; */
+            /* background-position-x: left;
+            background-position-y: center; */
+            background-position: left center;
+            background-attachment: local;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="height-width">
+        <p>Height width</p>
+    </div>
+    <br>
+    <div class="borders">
+        <p>Borders Demo</p>
+    </div>
+    <br>
+    <div class="bgDemo">
+        <p>Background Demo</p>
+    </div>
+</body>
+</html>
