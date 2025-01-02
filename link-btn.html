@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link and button styless using pseudo selectors and more designong in css</title>
+    <style>
+        .card{
+            background-color: royalblue;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 20px auto;
+            display: inline-block;
+        }
+        h1,p{
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px 0;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            background-color: coral;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color: #f00;
+            color: #000;
+        }
+        a:visited{
+            background-color: #0cc;
+            color: #fff;
+        }
+        a:active{
+            background-color: #132130;
+            
+        }
+        button{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            background-color: #f00;
+            color: #000;
+        }
+
+        button:active{
+            background-color: #132130;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>NextLevelCodes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae natus harum veniam, dicta omnis nobis asperiores aperiam quas temporibus soluta.</p>
+        <a href="https://twitt.com">Visit Now</a>
+        <button>Contact Us</button>
+    </div>
+    <div class="card">
+        <h1>NextLevelCodes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae natus harum veniam, dicta omnis nobis asperiores aperiam quas temporibus soluta.</p>
+        <a href="https://twit.com">Visit Now</a>
+        <button>Contact Us</button>
+    </div>
+</body>
+</html>
