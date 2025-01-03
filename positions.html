@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .cards{
+            border: 2px solid red;
+            margin: 20px;
+            position: relative;
+            height: 2000px;
+
+        }
+        .card{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+        /* static(default),relative,absolute,fixed,sticky */
+        #card1{
+            background-color: royalblue;
+            position: relative;
+            /* top: 50px;
+            left: 50px; */
+        }
+        #card2{
+            background-color: green;
+            position: absolute;
+            top: 250px;
+
+            /* right: 0;
+            bottom: 0; */
+        }
+        #card3{
+            background-color: coral;
+            position: sticky;
+            top: 15px;
+        }
+        #card4{
+            background-color: pink;
+            position: fixed;
+            right: 10px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem assumenda mollitia ipsum consequuntur quos adipisci vel ut beatae accusantium et minima odit voluptates, totam vitae incidunt vero sed quidem cumque sit, itaque deserunt impedit quo. Quo enim corrupti nulla debitis doloremque fuga sit rem quaerat fugiat odio accusamus natus optio ad ut a modi sequi exercitationem animi commodi, cupiditate officiis distinctio! Illo cum consequuntur consectetur porro sed voluptatem sapiente animi rerum eum fugit, quasi dolore tempora ex soluta totam facilis perspiciatis nobis. Aliquam omnis fugiat odio veniam sapiente nam repellendus vel ad, cumque atque labore voluptatibus placeat itaque ullam, temporibus earum at esse similique eaque. Tenetur doloribus optio, amet praesentium accusamus inventore explicabo id provident. Beatae aliquam laudantium optio autem voluptates praesentium suscipit labore minus nulla cupiditate ut excepturi natus, dolores itaque ratione cumque eligendi atque reiciendis neque accusantium mollitia? Eius amet quo laboriosam libero natus optio minima aliquam obcaecati? Facere accusamus architecto ratione exercitationem quae consequuntur repudiandae ipsum, impedit officia saepe, laboriosam esse doloremque! Repellat harum iure dolorem excepturi. Quasi, dolorem molestias quod perferendis, ad debitis beatae voluptas unde possimus, voluptatibus facilis labore qui odio aliquam ipsam distinctio natus eius itaque autem excepturi laboriosam? Illo ullam nemo ipsam eius quaerat adipisci facere cumque, deleniti voluptatum! Nemo eius, necessitatibus blanditiis, fugit dolores quas laudantium non cumque hic unde veritatis labore! Provident eos, adipisci, modi similique, rerum vero molestiae itaque quo vel obcaecati voluptatem quam eius. Autem, natus adipisci voluptatum aspernatur nostrum quidem alias odit rem? Esse, error necessitatibus. Officiis animi consequuntur maiores consequatur distinctio eveniet nam assumenda totam ullam impedit sit fuga in doloribus repellendus adipisci cupiditate, nisi itaque. Voluptas officiis itaque laborum facilis culpa quam, distinctio expedita, perferendis eaque adipisci rerum repellendus ut molestiae temporibus vel magnam numquam laudantium eveniet molestias. Eius et atque fugit, quia tempora quibusdam magnam!</p>
+    <div class="cards">
+        <div class="card" id="card1">card 1</div>
+        <div class="card" id="card2">card 2</div>
+        <div class="card" id="card3">card 3</div>
+        <div class="card" id="card4">card 4</div>
+    </div>
+</body>
+</html>
