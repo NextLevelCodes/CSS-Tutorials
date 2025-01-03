@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index in CSS</title>
+    <style>
+        .card{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+
+        }
+        #card1{
+            background-color: royalblue;
+            /* position: relative; */
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+        #card2{
+            background-color: green;
+            /* visibility: hidden; */
+            /* display: none; */
+            /* position: absolute; */
+            z-index: 2;
+
+
+        }
+        #card3{
+            background-color: coral;
+            /* margin-left: 200px; */
+           
+        }
+        #card4{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="card1">Card 1</div>
+    <div class="card" id="card2" >Card 2</div>
+    <div class="card" id="card3">Card 3</div>
+    <div class="card" id="card4">Card 4</div>
+</body>
+</html>
