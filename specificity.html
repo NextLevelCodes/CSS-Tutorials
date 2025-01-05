@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in css</title>
+   
+    <style>
+        p{
+            color: red;
+        }
+        p{
+            color: royalblue;
+        }
+        p{
+            color: green ;
+        }
+        p{
+            color: black;
+        }
+    </style>
+      <link rel="stylesheet" href="specificity.css">
+</head>
+<body>
+    <h1>Specificity in css</h1>
+    <p class="frontend" id="frontend">Frontend Developer</p>
+    <p style="color: black;background-color: pink;">Backend Developer</p>
+    <p>Full Stack Developer</p>
+    <p>Application Developer</p>
+</body>
+</html>

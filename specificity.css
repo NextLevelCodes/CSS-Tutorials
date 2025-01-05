@@ -1,0 +1,25 @@
+
+p{
+    color: royalblue;
+    background-color:aqua ;
+}
+/* #frontend{
+    color: brown;
+} */
+
+p{
+    color: royalblue ;
+    background-color:aqua  ;
+    font-family: cursive;
+    font-size: 40px;
+}
+p{
+    color: rebeccapurple ;
+    background-color:red ;
+    font-family: cursive;
+}
+.frontend{
+    color: blueviolet;
+    background-color: green;
+
+}
