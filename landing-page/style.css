@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+header nav{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+header nav ul li a:hover{
+    color: #0cc;
+}
+.hero-section{
+    background-image: url(./bg-1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-section form{
+    position: relative;
+    /* border: 1px solid #fff; */
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 460px;
+    padding: 24px;
+    border-radius: 8px;
+    top: 200px;
+    left: 200px;
+}
+
+.hero-section form h3{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.hero-section form .input-group{
+    margin-bottom: 16px;
+}
+.hero-section form .input-group label{
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 18px;
+
+}
+.hero-section form .input-group input{
+    padding: 12px;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    width: 100%;
+}
+.hero-section form .input-group input::placeholder{
+    color: #fff;
+}
+.btn{
+    padding: 12px;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(20, 50, 141);
+}
+.hero-section form button{
+    width: 100%;
+}
+.cta-section{
+    padding: 40px 0;
+    text-align: center;
+}
+.cta-section h3{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.cta-section p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.cta-section button{
+    margin-top: 12px;
+}
+footer{
+    padding: 12px 0;
+    border-top: 1px solid #d0d5dd;
+    text-align: center;
+}
