@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in CSS</title>
+    <style>
+        .box{
+            border: 10px solid red;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /* print-color-adjust: exact;
+            -webkit-print-color-adjust:exact; */
+        }
+        /* @media print{
+            .box{
+                background-color: royalblue;
+                font-size: 32px;
+            }
+        } */
+        /* @media (orientation:portrait) and (width < 600px){
+            .box{
+                background-color: aqua;
+                border: 10px solid green;
+                font-size: 10px;
+            }
+        } */
+        /* @media screen and ( 400px <= width<=500px) {
+            h1{
+                background-color: green;
+                color: white;
+            }
+            
+        } */
+        /* @media screen and (min-width: 500px) and (max-width: 768px) {
+            h1{
+                background-color: pink;
+                color: white;
+                font-size: 50px;
+            }
+            .box{
+                background-color: brown;
+            }
+            
+        } */
+        /* @media screen and (min-width: 500px) {
+            h1{
+                background-color: coral;
+                color: white;
+                font-size: 20px;
+            }
+            .box{
+                background-color: aqua;
+            }
+            
+        } */
+        /* @media screen and (max-width: 500px) {
+            h1{
+                background-color: coral;
+                color: white;
+                font-size: 20px;
+            }
+            .box{
+                background-color: aqua;
+            }
+            
+        } */
+        @media screen and (height<500px) {
+            h1{
+                background-color: palevioletred;
+                color: white;
+                font-size: 20px;
+            }
+            .box{
+                background-color: violet;
+            }
+            
+        }
+        /* @media (width < 600px){
+            .box{
+                background-color: black;
+                color: white;
+                font-size: 50px;
+                
+            }
+        } */
+    </style>
+</head>
+<body>
+    <h1>Media Queries in CSS</h1>
+    <div class="box">
+        I am a BOX
+    </div>
+</body>
+</html>
