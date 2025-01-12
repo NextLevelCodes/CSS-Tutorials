@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors in CSS</title>
+    <style>
+    
+        input[type="email"]{
+            border: 2px solid green;
+        }
+        input[type="number"]{
+            border: 2px solid aqua;
+        }
+        input{
+            border: 2px solid red;
+            outline: none;
+        }
+        /* a[target="_blank"]{
+            color: brown;
+        }
+        a[target="_self"]{
+            color: royalblue;
+        } */
+        /* a[href]{
+            color: red;
+        } */
+         img[alt *="iMaGe" i]{
+            height: 200px;
+            width: 200px;
+            border: 2px solid green;
+            margin: 20px;
+            border-radius: 50%;
+            padding: 3px;
+
+         }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors in CSS</h1>
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <input type="number" placeholder="Enter Phone Number">
+    <button type="submit">Submit</button>
+    <a href="https://instagram.com" target="_blank">Go to Instagram</a>
+    <a href="https://facebook.com" target="_self">Go to Facebook</a>
+    <a href="https://facebook.com" >dummy</a>
+    <br>
+    <img src="./satis.png" alt="asjhdkahsdkhsahdajksImage">
+    <img src="./satis.png" alt="hereimage">
+</body>
+</html>
