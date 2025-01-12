@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after in CSS</title>
+    <style>
+        h1::before{
+            content:attr(data-custom);
+            color: red;
+        }
+        h1::after{
+            content: attr(title);
+            color: green;
+        }
+        label::after{
+            content: "*";
+            color: red;
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+        }
+        a::before{
+            position: absolute;
+            content: "";
+            height: 2px;
+            width:0%;
+            background: green;
+            bottom: 0;
+        }
+        a:hover::before{
+            width: 100%;
+        }
+
+        ::selection{
+            background-color: royalblue;
+            color: white;
+        }
+        /* h3::first-letter{
+            font-size: 64px;
+            color: red;
+        } */
+        h3 span{
+            font-size: 64px;
+            color: red;
+
+        }
+        h4 span{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="Hello 123" data-custom="Custome Attribute">Tutorial of Before and After in CSS</h1>
+    <label for="">Name</label>
+    <input type="text">
+
+    <a href="">Home</a>
+
+    <h2>Select customs Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quaerat unde enim atque nulla quam molestiae magni optio possimus in!</h2>
+
+    <h3><span>N</span>extLevelCodes</h3>
+    <h4>Youtube Channel NextLevelCodes <span>Subscribe Now</span></h4>
+</body>
+</html>
