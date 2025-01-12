@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors in css</title>
+    <style>
+        /* p{
+            color: red;
+        } */
+        /* div p{
+            color: royalblue;
+        } */
+         /* div > p{
+            color: brown;
+         } */
+          /* ul> p{
+            color: aqua;
+          } */
+           /* ul li:nth-child(2n + 0){
+            color: blue;
+           }
+           ul li:nth-child(2n + 1){
+            color: blue;
+           } */
+           /* ul li:nth-child(even){
+            color: blue;
+           } */
+              /* ul li:nth-child(odd){
+            color: blue;
+           } */
+           /* .list li:last-child{
+            color: red;
+           } */
+
+            #list li:first-child{
+            color: royalblue;
+           }
+
+           #list p:first-child{
+            color: royalblue;
+           }
+
+           div + p{
+            color: aqua;
+           }
+            
+    </style>
+</head>
+<body>
+    <p>Outer Para</p>
+    <div>
+        <div>askjhdkjsa</div>
+        <p>First Div Para</p>
+        <ul id="list">
+            <p>Para 1</p>
+            <p>Para 2</p>
+            <p>Para 3</p>
+      
+           
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        
+        </ul>
+        <p>First last para</p>
+        <div>
+            <p>inside Second Div</p>
+            <p>inside Second Div</p>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor.</p>
+    <div>asdkjk</div>
+    <p>Hello Para</p>
+</body>
+</html>
