@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar group in CSS</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .avatar-group{
+            margin: 50px;
+        }
+        .avatar-group button{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: none;
+            position: relative;
+            cursor: pointer;
+            font-weight: 600;
+            color: #fff;
+            margin-right: -15px;
+        }
+        .avatar-group button::before{
+            position: absolute;
+            content: attr(data-custom-name);
+            top: -25px;
+            left:-50% ;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 4px 6px;
+            border-radius: 6px;
+            white-space: nowrap;
+            display: none;
+        }
+        .avatar-group button:hover::before{
+            display: block;
+        }
+        .avatar-group button:nth-child(1){
+            background-color: royalblue;
+        }
+        .avatar-group button:nth-child(2){
+            background-color: coral;
+        }
+        .avatar-group button:nth-child(3){
+            background-color: hotpink;
+        }
+        .avatar-group button:nth-child(4){
+            background-color: brown;
+        }
+        .avatar-group button:nth-child(5){
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>initials Avatar group</h1>
+    <div class="avatar-group">
+        <button type="button"  data-custom-name="Satis Chaudhary">SC</button>
+        <button type="button" data-custom-name="Yogesh Chaudhary">YC</button>
+        <button type="button" data-custom-name="Sandeep Sharma">SS</button>
+        <button type="button" data-custom-name="Abishek Chaudhary">AC</button>
+        <button type="button" data-custom-name="Sanju Majhi">SM</button>
+    </div>
+</body>
+</html>
