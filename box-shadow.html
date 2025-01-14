@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow in CSS</title>
+    <style>
+        body{
+            background: #e8e8e8;
+            font-family: sans-serif;
+        }
+        .boxes{
+            display: flex;
+            gap: 30px;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background: #fff;
+            font-size: 24px;
+            /* offsetx-x,offset-y,blur-radius,spread-radius color */
+            /* box-shadow: -20px -30px 30px 30px red; */
+            /* box-shadow: 20px 30px  teal ,30px 40px  hotpink; */
+            /* box-shadow: inset 20px 10px 20px teal,inset 40px 20px 20px hotpink; */
+            box-shadow: 20px 10px  royalblue;
+
+        }
+        h1{
+            text-shadow: -2px -3px  teal;
+            text-shadow: 2px 3px  hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>NextLevelCodes</h1>
+    <div class="boxes">
+        <div class="box" id="box1">I am a Box 1</div>
+        <div class="box" id="box2">I am a Box 2</div>
+        <div class="box" id="box3">I am a Box 3</div>
+        <div class="box" id="box4">I am a Box 4</div>
+    </div>
+</body>
+</html>
