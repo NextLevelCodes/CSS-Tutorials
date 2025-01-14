@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Custom properties in CSS</title>
+    <style>
+        :root{
+            --custom-font-size:75px; 
+            --c:teal;
+        }
+        h1{
+            font-size: var(--custom-font-size);
+            color: var(--c);
+        }
+        .box{
+            font-size: var(--custom-font-size);
+            color: var(--c);
+            /* background-color: var(--bg); */
+            color: var(--bg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tututorial for Variable and custom properties</h1>
+    <div class="boxes">
+        <div class="box" style="--bg:coral;">I am a Box 1</div>
+        <div class="box" style="--bg:green;">I am a Box 2</div>
+        <div class="box" style="--bg:hotpink;">I am a Box 3</div>
+        <div class="box" style="--bg:aqua;">I am a Box 4</div>
+    
+</body>
+</html>
