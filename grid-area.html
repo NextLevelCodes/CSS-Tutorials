@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area in grid</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #page{
+            display: grid;
+            grid-template-areas:
+            'header header header header header header' 
+            'sidebar main main main main main'
+             'footer footer footer footer footer footer'
+            ;
+        }
+        #page header{
+            padding: 24px;
+            background-color: royalblue;
+            font-size: 32px;
+            grid-area: header;
+
+        }
+        #page #sidebar{
+            padding: 24px;
+            background-color: coral;
+            font-size: 32px;
+            grid-area: sidebar;
+            
+        }
+        #page #main{
+            padding: 24px;
+            background-color: brown;
+            font-size: 32px;
+            grid-area: main;
+            height: 60vh;
+            
+        }
+        #page footer{
+            padding: 24px;
+            background-color: hotpink;
+            font-size: 32px;
+            grid-area: footer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>Header here</header>
+        <section id="sidebar">Sidebar here </section>
+        <main id="main">Main Content</main>
+        <footer>Footer Here</footer>
+    </div>
+</body>
+</html>
