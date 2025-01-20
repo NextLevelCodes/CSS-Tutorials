@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Challenge</title>
+    <style>
+        body {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card-wrapper {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            width: 1000px;
+            height: 400px;
+
+        }
+
+        .card {
+            font-size: 60px;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: sans-serif;
+
+        }
+
+        #card1 {
+            background-color: coral;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #card2 {
+            background-color: royalblue;
+
+        }
+
+        #card3 {
+            background-color: green;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+
+        }
+
+        #card4 {
+            background-color: hotpink;
+
+        }
+
+        #card5 {
+            background-color: brown;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        @media screen and (max-width:767px) {
+
+            .card-wrapper {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1,1fr);
+            }
+
+            #card1 {
+                grid-column-start: auto;
+                grid-column-end: auto;
+            }
+
+            #card3 {
+
+                grid-column-start: auto;
+                grid-column-end: auto;
+                grid-row-start: auto;
+                grid-row-end: auto;
+            }
+
+            #card5 {
+                grid-column-start: auto;
+                grid-column-end: auto;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-wrapper">
+        <div class="card" id="card1">1</div>
+        <div class="card" id="card2">2</div>
+        <div class="card" id="card3">3</div>
+        <div class="card" id="card4">4</div>
+        <div class="card" id="card5">5</div>
+    </div>
+</body>
+
+</html>
